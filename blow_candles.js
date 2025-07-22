@@ -20,10 +20,7 @@ const blowCandles = (str) => {
 			.map((c) => (+c > 0 ? c - 1 : c))
 			.join("");
 		// Now we need to replace the first 3 digits in the original string
-
-		console.log("first3", first3);
 		str = str.replace(str.slice(0, 3), first3);
-		console.log("str", str);
 		// console.log(str);
 		count++;
 	}
